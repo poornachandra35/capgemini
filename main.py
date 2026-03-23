@@ -2,7 +2,8 @@ from fastapi import FastAPI, Body
 from fastapi.responses import PlainTextResponse
 from google import genai
 
-client = genai.Client(api_key="AIzaSyD5bbOl1opNLtv4_8xSqDCQyPitHooqrU8")
+import os
+client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 app = FastAPI()
 
