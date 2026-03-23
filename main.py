@@ -13,6 +13,7 @@ def solve_problem(question: str = Body(...)):
     Generate ONLY Java code.
     No explanation.
     No markdown.
+    NO comments
     Proper indentation required.
 
     Problem:
